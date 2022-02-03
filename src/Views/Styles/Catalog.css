@@ -1,0 +1,23 @@
+.arrowleft{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../Assets/svg/arrowleft.svg);
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
+}
+.arrowright{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../Assets/svg/arrowright.svg);
+    background-size: cover;
+    background-color: transparent;
+    border: transparent;
+}
+.counter_products{
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+}

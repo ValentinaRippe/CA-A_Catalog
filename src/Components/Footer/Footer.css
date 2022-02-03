@@ -1,0 +1,48 @@
+.Footer{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    bottom: 0v;
+}
+.container_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.logo_footer{
+    width: 50px;
+    padding: 0.2rem;
+}
+.container_footer .git_footer p{
+    color: #E0B88B;
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+
+}
+.container_footer div p{
+    color: #E0B88B;
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.container_footer div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.git_footer{
+    display: flex;
+    flex-direction: column;
+}
+.items_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

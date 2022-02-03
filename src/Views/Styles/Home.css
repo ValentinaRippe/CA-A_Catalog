@@ -1,0 +1,59 @@
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo_home{
+    width: 100px;/* max-width: 10vw; */
+    margin-top: -3rem;
+}
+.text_caña{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+}
+.text_home{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 60vw;
+}
+.infographic{
+    margin-top: -2rem;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+}
+.button_home{
+    border: none;
+    background-color: #E0B88B;
+    width: 70px;
+    height: 70px;
+    margin: 2rem;
+    -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+     box-shadow: inset 3px 4px 15px -1px rgba(0, 0, 0, 0.71);
+     padding: 0;
+}
+.text_catalog{
+    -webkit-transform: rotate(-45deg);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+}
+@media screen and (min-width: 700px) {
+    .infographic{
+       width: 500px;
+    }
+  }

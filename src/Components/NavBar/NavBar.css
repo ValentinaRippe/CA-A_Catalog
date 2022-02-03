@@ -1,0 +1,11 @@
+.NavBar{
+    height: 100px;
+}
+.logo_navbar{
+    width: 60px;
+    margin: 1rem;
+}
+.cart{
+    float: right;
+    margin: 2rem;
+}
