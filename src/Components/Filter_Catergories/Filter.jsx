@@ -1,28 +1,25 @@
 import React from 'react';
 import { dataProducts } from "../../Data";
+import { type } from '../../Actions/catalogAction'
 
 import './Filter.css'
 export function Filter({dispatch}) {
 
 
     const books = () => {
-        dispatch(dataProducts[0].products);
+        dispatch({type:type.bookFilter});
       };
       const planners = () =>{
-        dispatch(dataProducts[1].products);
+        dispatch({type:type.plannersFilter});
       }
       const packaging = () =>{
-        dispatch(dataProducts[2].products);
+        dispatch({type:type.packagingFilter});
       }
       const extras = () =>{
-        dispatch(dataProducts[3].products);
+        dispatch({type:type.extrasFilter});
       }
       const all = () =>{
-        dataProducts.map((data) => {
-          data.products.map(item => {
-          dispatch((prevState) => [... prevState, item]
-          )})
-      })
+        dispatch({type:type.allFilter});
       }
   return (
   <div className='buttons_filter'>
