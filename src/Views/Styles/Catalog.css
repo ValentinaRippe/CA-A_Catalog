@@ -1,23 +1,106 @@
-.arrowleft{
-    width: 40px;
-    height: 40px;
-    background-image: url(../../Assets/svg/arrowleft.svg);
-    background-size: cover;
-    background-color: transparent;
-    border: transparent;
-}
-.arrowright{
-    width: 40px;
-    height: 40px;
-    background-image: url(../../Assets/svg/arrowright.svg);
-    background-size: cover;
-    background-color: transparent;
-    border: transparent;
-}
-.counter_products{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.Catalog{
     display: flex;
-    flex-direction: row;
-    width: 160px;
+    flex-direction: column;
     align-items: center;
+    min-height: calc(100vh - 185px);
+    padding: 0px;
+}
+.Products{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card_catalog{
+    display: flex;
+    margin: 0.5rem;
     justify-content: space-between;
+    padding: 0;
+    width: 360px;
+    height: 260px;
+    background-color: #e0b88b7c;
+}
+.product{
+    text-align: center;
+    padding: 0;
+}
+.product p{
+  font-weight: bold;
+  text-decoration-line: underline;
+  line-height: 23px;
+}
+.img_producst{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_producst img{
+    width: 100%;
+}
+.interact_products div{
+    margin-top: 1rem;
+}
+.personalizer_products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0b88b;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.25);
+  border: transparent;
+  width: 170px;
+  height: 50px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+.arrowleft {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../Assets/svg/arrowleft.svg);
+  background-size: cover;
+  background-color: transparent;
+  border: transparent;
+}
+.arrowleft:hover{
+  transform: scale(1.1);
+}
+.arrowright {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../Assets/svg/arrowright.svg);
+  background-size: cover;
+  background-color: transparent;
+  border: transparent;
+}
+.arrowright:hover{
+  transform: scale(1.1);
+}
+.counter_products {
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.25);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.price_products {
+  display: flex;
+  width: 160px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.price_products p {
+  padding: 0;
+  text-align: center;
 }

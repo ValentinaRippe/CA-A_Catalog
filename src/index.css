@@ -8,9 +8,10 @@ body {
   background-size: 100vh;
   background-position: -10vh 5vh;
   font-family: 'Montserrat';
+  height: auto;
 }
 html{
-  height: 100vh;
+  height: 100%;
 }
 
 code {
@@ -25,5 +26,8 @@ code {
     background-attachment: fixed;
     background-size: 150vh;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 }

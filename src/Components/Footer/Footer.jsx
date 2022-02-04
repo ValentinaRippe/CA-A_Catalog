@@ -16,10 +16,11 @@ export function Footer() {
           <div className='items_footer'>
             <p>CAÑA REDES</p>
             <div >
-              <img className="logo_instagram" src={instagram} alt="" />
-              <img className="logo_whatsApp" src={whatsApp} alt="" />
+              <img className="logo_instagram" src={instagram} alt="" width='25px' />
+              <img className="logo_whatsApp" src={whatsApp} alt="" width='25px'/>
             </div>
           </div>
+          <a href="">Hola</a>
           <img className="logo_footer" src={logo} alt="" />
           <div className='git_footer'>
             <img className="logo_github" src={github} alt="" />

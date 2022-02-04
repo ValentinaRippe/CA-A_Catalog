@@ -13,6 +13,8 @@ import planeadorsemanalmediano from './Assets/img/organizadores/planeadorsemanal
 import cajasparalibretas from './Assets/img/Paqueteria/cajasparalibretasabierta.jpg'
 import cajasalamedida from './Assets/img/Paqueteria/portada.jpg'
 import bolsasalamedida from './Assets/img/Paqueteria/bolsasalamedida.jpg'
+//img Extras
+import tarjeta from './Assets/img/Extras/tarjetas.jpg'
 
 export const dataProducts = [
     {
@@ -21,7 +23,7 @@ export const dataProducts = [
         products:[
             {
                 id:1,
-                name:'Libreta Ecologica Tradicional',
+                name:'Libreta Ecológica Tradicional',
                 image:libretatradicionalgrande,
                 price: 33000,
                 size:'Grande',
@@ -30,7 +32,7 @@ export const dataProducts = [
             },
             {
                 id:2,
-                name:'Libreta Ecologica Tradicional',
+                name:'Libreta Ecológica Tradicional',
                 image:libretatradicionalmediana,
                 price: 20000,
                 size:'Mediana',
@@ -39,7 +41,7 @@ export const dataProducts = [
             },
             {
                 id:3,
-                name:'Libreta Ecologica Tradicional',
+                name:'Libreta Ecológica Tradicional',
                 image:libretatradicionalpequeña ,
                 price: 6200,
                 size:'Pequeña',
@@ -48,7 +50,7 @@ export const dataProducts = [
             },
             {
                 id:4,
-                name:'Libreta Ecologica Tradicional',
+                name:'Libreta Ecológica Tradicional',
                 image:libretatradicionalmini,
                 price: 4500,
                 size:'Mini',
@@ -57,7 +59,7 @@ export const dataProducts = [
             },
             {
                 id:5,
-                name:'Libreta Ecologica Especializada de Bocetos',
+                name:'Libreta Ecológica Especializada de Bocetos',
                 image:libretaespecializadadebocetos,
                 price: 36000,
                 size:'Mediana',
@@ -66,7 +68,7 @@ export const dataProducts = [
             },
             {
                 id:6,
-                name:'Libreta Ecologica Especializada de Dibujo',
+                name:'Libreta Ecológica Especializada de Dibujo',
                 image:libretaespecializadadedibujo,
                 price: 33000,
                 size:'Grande',
@@ -75,7 +77,7 @@ export const dataProducts = [
             },
             {
                 id:7,
-                name:'Libreta Ecologica Especializada Pentagramada',
+                name:'Libreta Ecológica Especializada Pentagramada',
                 image:libretaespecializadapentagramada,
                 price: 33000,
                 size:'Mediana',
@@ -86,7 +88,7 @@ export const dataProducts = [
     },
     {
         id: 2,
-        type:'Organizadores',
+        type:'Planeadores',
         products:[
             {
                 id:8,
@@ -153,6 +155,18 @@ export const dataProducts = [
                 id:12,
                 name:'Bolsas a la medida',
                 image:bolsasalamedida 
+            }
+        ]
+    },
+    {
+        id: 4,
+        type:'Extras',
+        products:[
+            {
+                id:13,
+                name:'Tarjetas',
+                image:tarjeta,
+                price:1000
             }
         ]
     }
