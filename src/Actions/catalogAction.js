@@ -1,5 +1,5 @@
 export const type = {
-    bookFilter: 'bookFilter',
+    booksFilter: 'booksFilter',
     plannersFilter:' plannersFilter',
     packagingFilter:'packagingFilter',
     extrasFilter:'extrasFilter',

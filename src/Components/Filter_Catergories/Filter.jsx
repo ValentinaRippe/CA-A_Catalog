@@ -4,10 +4,8 @@ import { type } from '../../Actions/catalogAction'
 
 import './Filter.css'
 export function Filter({dispatch}) {
-
-
     const books = () => {
-        dispatch({type:type.bookFilter});
+        dispatch({type:type.booksFilter});
       };
       const planners = () =>{
         dispatch({type:type.plannersFilter});

@@ -1,13 +1,19 @@
 import React from "react";
 import "../../Views/Styles/Catalog.css";
 import addcart from "../../Assets/svg/addcart.svg";
+import { dataProducts } from '../../Data'
+
 
 export function Products({ state, products }) {
+
   
+  if(state.length === undefined){
+    state = products
+  }
 
   return (
     <div>
-       { state.products.map((item, index) => (
+       { state.map((item, index) => (
           <div key={index} className="card_catalog">
             <div className="product">
               <div className="img_producst">

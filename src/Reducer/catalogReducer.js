@@ -1,23 +1,34 @@
 
 import { type } from '../Actions/catalogAction'
 import { dataProducts } from '../Data'
-export const catalogInitialState = { products: [] }
 
+let all 
+ 
+dataProducts.map(data =>{
+     data.products.map(item =>{
+         all = item
+     })
+ })
+
+export const catalogInitialState = { products: [all] }
 
 export function catalogReducer(state, action) {
+    let filter;
     switch (action.type) {
-        case type.bookFilter:
-            return { products: state.dataProducts[0].products }
+        case type.booksFilter:
+            filter = dataProducts[0].products
+            return(filter)
         case type.plannersFilter:
-            return { products: state.dataProducts[1].products }
+            filter = dataProducts[1].products
+            return(filter)
         case type.packagingFilter:
-            return { products: state.dataProducts[2].products }
+            filter = dataProducts[2].products
+            return(filter)
         case type.extrasFilter:
-            return { products: state.dataProducts[3].products }
+            filter = dataProducts[3].products
+            return(filter)
         case type.allFilter:
-            return { 
-                
-    }
+            return (all)
 }
 } 
 

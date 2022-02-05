@@ -9,7 +9,7 @@ import { Products } from "../Components/Products/Products";
 
 
 export function Catalog() {
-  const [state, dispatch] = useReducer(catalogReducer,catalogInitialState)
+  const [state, dispatch] = useReducer(catalogReducer, catalogInitialState)
   return (
     <div className="Catalog">
       <Filter dispatch={dispatch}/>
