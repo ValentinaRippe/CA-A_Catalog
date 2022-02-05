@@ -10,11 +10,13 @@ import { Products } from "../Components/Products/Products";
 
 export function Catalog() {
   const [state, dispatch] = useReducer(catalogReducer,catalogInitialState)
+  console.log(state)
+
   return (
     <div className="Catalog">
       <Filter dispatch={dispatch}/>
       <div className='Products'>
-       <Products state={state} products={catalogInitialState.products}/>
+       <Products state={state} products={catalogInitialState.products}/>  
       </div>
     </div>
   );

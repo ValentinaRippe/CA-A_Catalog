@@ -3,24 +3,30 @@ import { dataProducts } from "../../Data";
 import { type } from '../../Actions/catalogAction'
 
 import './Filter.css'
+
 export function Filter({dispatch}) {
 
 
     const books = () => {
-        dispatch({type:type.bookFilter});
-      };
-      const planners = () =>{
-        dispatch({type:type.plannersFilter});
-      }
-      const packaging = () =>{
-        dispatch({type:type.packagingFilter});
-      }
-      const extras = () =>{
-        dispatch({type:type.extrasFilter});
-      }
-      const all = () =>{
-        dispatch({type:type.allFilter});
-      }
+      dispatch({type:type.bookFilter});
+    }
+
+    const planners = () =>{
+      dispatch({type:type.plannersFilter});
+    }
+
+    const packaging = () =>{
+      dispatch({type:type.packagingFilter});
+    }
+
+    const extras = () =>{
+      dispatch({type:type.extrasFilter});
+    }
+
+    const all = () =>{
+      dispatch({type:type.allFilter});
+    }
+    
   return (
   <div className='buttons_filter'>
       <button className="filter_products" onClick={books}>Libretas</button>
