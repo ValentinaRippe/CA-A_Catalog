@@ -23,7 +23,8 @@ export const dataProducts = [
         products:[
             {
                 id:1,
-                name:'Libreta Ecológica Tradicional',
+                route:'/personalizarlibretas',
+                name:'Libreta Tradicional',
                 image:libretatradicionalgrande,
                 price: 33000,
                 size:'Grande',
@@ -32,7 +33,8 @@ export const dataProducts = [
             },
             {
                 id:2,
-                name:'Libreta Ecológica Tradicional',
+                route:'/personalizarlibretas',
+                name:'Libreta Tradicional',
                 image:libretatradicionalmediana,
                 price: 20000,
                 size:'Mediana',
@@ -41,7 +43,8 @@ export const dataProducts = [
             },
             {
                 id:3,
-                name:'Libreta Ecológica Tradicional',
+                route:'/personalizarlibretas',
+                name:'Libreta Tradicional',
                 image:libretatradicionalpequeña ,
                 price: 6200,
                 size:'Pequeña',
@@ -50,7 +53,8 @@ export const dataProducts = [
             },
             {
                 id:4,
-                name:'Libreta Ecológica Tradicional',
+                route:'/personalizarlibretas',
+                name:'Libreta Tradicional',
                 image:libretatradicionalmini,
                 price: 4500,
                 size:'Mini',
@@ -59,7 +63,8 @@ export const dataProducts = [
             },
             {
                 id:5,
-                name:'Libreta Ecológica Especializada de Bocetos',
+                route:'/personalizarlibretas',
+                name:'Libreta Especializada de Bocetos',
                 image:libretaespecializadadebocetos,
                 price: 36000,
                 size:'Mediana',
@@ -68,7 +73,8 @@ export const dataProducts = [
             },
             {
                 id:6,
-                name:'Libreta Ecológica Especializada de Dibujo',
+                route:'/personalizarlibretas',
+                name:'Libreta Especializada de Dibujo',
                 image:libretaespecializadadedibujo,
                 price: 33000,
                 size:'Grande',
@@ -77,7 +83,8 @@ export const dataProducts = [
             },
             {
                 id:7,
-                name:'Libreta Ecológica Especializada Pentagramada',
+                route:'/personalizarlibretas',
+                name:'Libreta Especializada Pentagramada',
                 image:libretaespecializadapentagramada,
                 price: 33000,
                 size:'Mediana',
@@ -92,6 +99,7 @@ export const dataProducts = [
         products:[
             {
                 id:8,
+                route:'/personalizarlibretas',
                 name:'Planeador Semanal',
                 image:planeadorsemanalgrande,
                 price: 35000,
@@ -101,6 +109,7 @@ export const dataProducts = [
             },
             {
                 id:9,
+                route:'/personalizarlibretas',
                 name:'Planeador Semanal',
                 image:planeadorsemanalmediano,
                 price: 30000,
@@ -116,6 +125,7 @@ export const dataProducts = [
         products:[
             {
                 id:10,
+                route:'/personalizarcajas',
                 name:'Cajas para Libretas',
                 image:cajasparalibretas,
                 size:'Grandes',
@@ -124,6 +134,7 @@ export const dataProducts = [
             },
             {
                 id:11,
+                route:'/personalizarcajas',
                 name:'Cajas para Libretas',
                 image:cajasparalibretas,
                 size:'Medianas',
@@ -132,6 +143,7 @@ export const dataProducts = [
             },
             {
                 id:12,
+                route:'/personalizarcajas',
                 name:'Cajas para Libretas',
                 image:cajasparalibretas,
                 size:'Pequeñas',
@@ -140,6 +152,7 @@ export const dataProducts = [
             },
             {
                 id:13,
+                route:'/personalizarcajas',
                 name:'Cajas para Libretas',
                 image:cajasparalibretas,
                 size:'Mini',
@@ -147,12 +160,14 @@ export const dataProducts = [
                 price: 5000
             },
             {
-                id:11,
+                id:14,
+                route:'/personalizarcajas',
                 name:'Cajas a la medida',
                 image:cajasalamedida 
             },
             {
-                id:12,
+                id:15,
+                route:'/personalizarbolsas',
                 name:'Bolsas a la medida',
                 image:bolsasalamedida 
             }
@@ -163,7 +178,8 @@ export const dataProducts = [
         type:'Extras',
         products:[
             {
-                id:13,
+                id:16,
+                route:'/personalizarbolsas',
                 name:'Tarjetas',
                 image:tarjeta,
                 price:1000

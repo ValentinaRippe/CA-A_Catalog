@@ -3,7 +3,7 @@
     background-color: black;
     width: 100%;
     height: auto;
-    margin-top: auto;
+    margin-top: 1rem;
 }
 .container_footer{
     display: flex;

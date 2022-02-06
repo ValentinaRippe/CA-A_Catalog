@@ -1,24 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { dataProducts } from "../../Data";
 import { type } from '../../Actions/catalogAction'
 
 import './Filter.css'
-export function Filter({dispatch}) {
+export function Filter({/* dispatch */ setProducts}) {
     const books = () => {
-        dispatch({type:type.booksFilter});
+      setProducts(dataProducts[0].products)
+        /* dispatch({type:type.booksFilter}) */;
       };
       const planners = () =>{
-        dispatch({type:type.plannersFilter});
+        setProducts(dataProducts[1].products)
+        /* dispatch({type:type.plannersFilter}) */;
       }
       const packaging = () =>{
-        dispatch({type:type.packagingFilter});
+        setProducts(dataProducts[2].products)
+        /* dispatch({type:type.packagingFilter}) */;
       }
       const extras = () =>{
-        dispatch({type:type.extrasFilter});
+        setProducts(dataProducts[3].products)
+        /* dispatch({type:type.extrasFilter}) */;
       }
       const all = () =>{
-        dispatch({type:type.allFilter});
+        dataProducts.map(data =>{
+          data.products.filter(item=>{
+            setProducts((prevState) => [...prevState, item])
+          })
+        })
+        /* dispatch({type:type.allFilter}) */;
       }
+
   return (
   <div className='buttons_filter'>
       <button className="filter_products" onClick={books}>Libretas</button>

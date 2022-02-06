@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import { dataProducts } from "../Data";
 import { catalogReducer } from '../Reducer/catalogReducer';
 import { catalogInitialState } from "../Reducer/catalogReducer";
@@ -8,13 +8,15 @@ import { Filter } from '../Components/Filter_Catergories/Filter'
 import { Products } from "../Components/Products/Products"; 
 
 
-export function Catalog() {
-  const [state, dispatch] = useReducer(catalogReducer, catalogInitialState)
+export function Catalog({products, setProducts}) {
+  /* const [state, dispatch] = useReducer(catalogReducer, catalogInitialState) */
+
+
   return (
     <div className="Catalog">
-      <Filter dispatch={dispatch}/>
-      <div className='Products'>
-       <Products state={state} products={catalogInitialState.products}/>
+      <Filter setProducts={setProducts}/* dispatch={dispatch} *//>
+      <div >
+       <Products  products={products} setProducts={setProducts} /* state={state} products={catalogInitialState.products} *//>
       </div>
     </div>
   );

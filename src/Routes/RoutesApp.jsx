@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Cart } from '../Views/Cart'
 import { Catalog } from '../Views/Catalog'
@@ -10,15 +10,16 @@ import { Footer } from '../Components/Footer/Footer';
 import { NavBar } from '../Components/NavBar/NavBar';
 
 export function RoutesApp() {
+  const [products, setProducts] = useState([])
   return (
     <HashRouter>
     <Routes>
       <Route path='/' element={<Footer />}>
 
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home setProducts={setProducts} />} />
         <Route path='/' element={<NavBar />}>
-        <Route path='/catalogo' element={<Catalog />} />
-        <Route path='/personalizarlibretas' element={<PersonalizeBooks />} />
+        <Route path='/catalogo' element={<Catalog setProducts={setProducts} products={products}/>} />
+        <Route path='/personalizarlibretas' element={<PersonalizeBooks/>} />
         <Route path='/personalizarcajas' element={<PersonalizeBoxes />} />
         <Route path='/personalizarbolsas' element={<PersonalizeBags />} />
         </Route>
