@@ -1,0 +1,36 @@
+.Carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    overflow: hidden;
+}
+.img_desing{
+    margin: 1rem;
+}
+.img_desing:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.left_button{
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    margin-left: -300px;
+    border: transparent;
+    background: linear-gradient(-270deg, rgba(0, 0, 0, 0.73) 0%, rgba(224, 184, 139, 0) 69.23%);
+}
+.left_button:hover{
+    cursor: pointer;
+}
+.right_button{
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    margin-left: 300px;
+    border: transparent;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.73) 0%, rgba(224, 184, 139, 0) 69.23%);
+}
+.right_button:hover{
+    cursor: pointer;
+}

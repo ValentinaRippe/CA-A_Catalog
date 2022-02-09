@@ -4,14 +4,14 @@ import infografia from "../Assets/img/Infografia/infografía.png";
 import "./Styles/Home.css";
 import { Link } from "react-router-dom";
 import { dataProducts } from "../Data";
+import useProducts from '../Hooks/useProducts';
 
-export function Home({setProducts}) {
-
+export function Home() {
+  const {setProducts} = useProducts()
 const all = () =>{
     dataProducts.map(data =>{
       data.products.map(item=>{
         setProducts((prevState) => [...prevState, item])
-        console.log(item)
       })
     })
     /* dispatch({type:type.allFilter}) */;

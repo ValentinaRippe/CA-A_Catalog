@@ -6,15 +6,16 @@ import { catalogInitialState } from "../Reducer/catalogReducer";
 import "./Styles/Catalog.css";
 import { Filter } from '../Components/Filter_Catergories/Filter'
 import { Products } from "../Components/Products/Products"; 
+import useProducts from '../Hooks/useProducts';
 
 
-export function Catalog({products, setProducts}) {
+export function Catalog() {
   /* const [state, dispatch] = useReducer(catalogReducer, catalogInitialState) */
-
+ const {products, setProducts} = useProducts()
 
   return (
     <div className="Catalog">
-      <Filter setProducts={setProducts}/* dispatch={dispatch} *//>
+      <Filter products={products} setProducts={setProducts}/* dispatch={dispatch} *//>
       <div >
        <Products  products={products} setProducts={setProducts} /* state={state} products={catalogInitialState.products} *//>
       </div>

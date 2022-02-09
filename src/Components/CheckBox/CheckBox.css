@@ -1,0 +1,24 @@
+.checkBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.checkBox p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.checkBox div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+.checkBox input{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}

@@ -1,0 +1,37 @@
+.Products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_catalog{
+    display: flex;
+    margin: 0.5rem;
+    justify-content: space-between;
+    padding: 0;
+    width: 360px;
+    height: 260px;
+    background-color: #e0b88b7c;
+}
+.product{
+    text-align: center;
+    padding: 0;
+}
+.product p{
+  font-weight: bold;
+  text-decoration-line: underline;
+  line-height: 23px;
+}
+.img_producst{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_producst img{
+    width: 100%;
+}
+.interact_products div{
+    margin-top: 1rem;
+}

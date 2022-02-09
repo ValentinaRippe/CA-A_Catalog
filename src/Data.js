@@ -24,72 +24,86 @@ export const dataProducts = [
             {
                 id:1,
                 route:'/personalizarlibretas',
-                name:'Libreta Tradicional',
+                name:'Libreta',
+                type:'Tradicional',
                 image:libretatradicionalgrande,
                 price: 33000,
                 size:'Grande',
                 cms: '25 x 17 cms.',
-                sheets:'100 Hojas'
+                sheets:'100 Hojas - 72gr',
+                fact:'Encuadernación en caballete' 
             },
             {
                 id:2,
                 route:'/personalizarlibretas',
-                name:'Libreta Tradicional',
+                name:'Libreta',
+                type:'Tradicional',
                 image:libretatradicionalmediana,
                 price: 20000,
                 size:'Mediana',
                 cms: '21 x 14 cms.',
-                sheets:'80 Hojas'
+                sheets:'80 Hojas - 72gr',
+                fact:'Encuadernación en caballete' 
             },
             {
                 id:3,
                 route:'/personalizarlibretas',
-                name:'Libreta Tradicional',
+                name:'Libreta',
+                type:'Tradicional',
                 image:libretatradicionalpequeña ,
                 price: 6200,
                 size:'Pequeña',
                 cms: '14 x 10 cms.',
-                sheets:'60 Hojas'   
+                sheets:'60 Hojas - 72gr',   
+                fact:'Encuadernación en caballete' 
             },
             {
                 id:4,
                 route:'/personalizarlibretas',
-                name:'Libreta Tradicional',
+                name:'Libreta',
+                type:'Tradicional',
                 image:libretatradicionalmini,
                 price: 4500,
                 size:'Mini',
                 cms: '9 x 9 cms.',
-                sheets:'40 Hojas'  
+                sheets:'40 Hojas - 72gr',  
+                fact:'Encuadernación en caballete' 
             },
             {
                 id:5,
                 route:'/personalizarlibretas',
-                name:'Libreta Especializada de Bocetos',
+                name:'Libreta de Bocetos',
+                type:'Especializada',
                 image:libretaespecializadadebocetos,
                 price: 36000,
                 size:'Mediana',
                 cms: '21 x 14 cms.',
-                sheets:'200 Hojas - 72gr'  
+                sheets:'200 Hojas - 72gr',  
+                fact:'Encuadernación en caballete' 
             },
             {
                 id:6,
                 route:'/personalizarlibretas',
-                name:'Libreta Especializada de Dibujo',
+                name:'Libreta de Dibujo',
+                type:'Especializada',
                 image:libretaespecializadadedibujo,
                 price: 33000,
                 size:'Grande',
                 cms: '25 x 17 cms.',
-                sheets:'50 Hojas - 200gr' 
+                sheets:'50 Hojas - 200gr', 
+                fact:'Argollado' 
             },
             {
                 id:7,
                 route:'/personalizarlibretas',
-                name:'Libreta Especializada Pentagramada',
+                name:'Libreta Pentagramada',
+                type:'Especializada',
                 image:libretaespecializadapentagramada,
                 price: 33000,
                 size:'Mediana',
                 cms: '21 x 14 cms.',
-                sheets:'80 Hojas - 72gr'             
+                sheets:'80 Hojas - 72gr',             
+                fact:'Argollado' 
             }
         ]
     },
@@ -101,21 +115,23 @@ export const dataProducts = [
                 id:8,
                 route:'/personalizarlibretas',
                 name:'Planeador Semanal',
+                type:'Organizador',
                 image:planeadorsemanalgrande,
                 price: 35000,
                 size:'Grande',
                 cms: '21 x 28 cms.',
-                sheets:'50 Hojas' 
+                sheets:'50 Hojas - 72gr' 
             },
             {
                 id:9,
                 route:'/personalizarlibretas',
                 name:'Planeador Semanal',
+                type:'Organizador',
                 image:planeadorsemanalmediano,
                 price: 30000,
                 size:'Mediano',
                 cms: '21 x 14 cms.',
-                sheets:'50 Hojas' 
+                sheets:'50 Hojas - 72gr' 
             }
         ]
     },

@@ -1,16 +1,10 @@
 
-import { type } from '../Actions/catalogAction'
+import { type } from './Actions/catalogAction'
 import { dataProducts } from '../Data'
 
-let all 
  
-dataProducts.map(data =>{
-     data.products.map(item =>{
-         all = item
-     })
- })
 
-export const catalogInitialState = { products: [all] }
+export const catalogInitialState = { products: [] }
 
 export function catalogReducer(state, action) {
     let filter;
@@ -28,7 +22,7 @@ export function catalogReducer(state, action) {
             filter = dataProducts[3].products
             return(filter)
         case type.allFilter:
-            return (all)
+            return (filter)
 }
 } 
 

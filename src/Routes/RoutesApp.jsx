@@ -8,17 +8,18 @@ import { PersonalizeBooks } from '../Views/PersonalizeBooks'
 import { PersonalizeBoxes } from '../Views/PersonalizeBoxes'
 import { Footer } from '../Components/Footer/Footer';
 import { NavBar } from '../Components/NavBar/NavBar';
+import ScrollToTop from '../Components/Scroll/ScrollToTop';
 
 export function RoutesApp() {
-  const [products, setProducts] = useState([])
   return (
     <HashRouter>
+      <ScrollToTop />
     <Routes>
       <Route path='/' element={<Footer />}>
 
-        <Route path='/' element={<Home setProducts={setProducts} />} />
+        <Route path='/' element={<Home  />} />
         <Route path='/' element={<NavBar />}>
-        <Route path='/catalogo' element={<Catalog setProducts={setProducts} products={products}/>} />
+        <Route path='/catalogo' element={<Catalog />} />
         <Route path='/personalizarlibretas' element={<PersonalizeBooks/>} />
         <Route path='/personalizarcajas' element={<PersonalizeBoxes />} />
         <Route path='/personalizarbolsas' element={<PersonalizeBags />} />

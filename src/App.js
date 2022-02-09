@@ -1,11 +1,11 @@
-import './App.css';
 import { RoutesApp } from './Routes/RoutesApp';
+import { ProductsProvider } from './Context/ProductsContext'
 
 function App() {
   return (
-    <div>
+    <ProductsProvider>
     <RoutesApp/>
-    </div>
+    </ProductsProvider>
   );
 }
 

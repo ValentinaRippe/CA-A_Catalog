@@ -1,9 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
 import { dataProducts } from "../../Data";
-import { type } from '../../Actions/catalogAction'
+import { type } from '../../Reducer/Actions/catalogAction'
 
 import './Filter.css'
 export function Filter({/* dispatch */ setProducts}) {
+
     const books = () => {
       setProducts(dataProducts[0].products)
         /* dispatch({type:type.booksFilter}) */;
@@ -18,7 +19,7 @@ export function Filter({/* dispatch */ setProducts}) {
       }
       const extras = () =>{
         setProducts(dataProducts[3].products)
-        /* dispatch({type:type.extrasFilter}) */;
+        /* dispatch({type:type.extrasFilter}) */
       }
       const all = () =>{
         dataProducts.map(data =>{
@@ -26,7 +27,7 @@ export function Filter({/* dispatch */ setProducts}) {
             setProducts((prevState) => [...prevState, item])
           })
         })
-        /* dispatch({type:type.allFilter}) */;
+        /* dispatch({type:type.allFilter}) */
       }
 
   return (

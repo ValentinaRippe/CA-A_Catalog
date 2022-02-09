@@ -1,0 +1,26 @@
+.coverPage{
+    display: flex;
+    flex-direction: row;
+}
+.coverPage img{
+    margin: 0.5rem;
+}
+.active_page{
+    border: 1px solid black;
+}
+
+.coverPage p:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+}
+.coverPage p {
+    margin-left: -115px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.coverPage div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
