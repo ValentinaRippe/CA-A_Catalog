@@ -6,7 +6,7 @@ export function ProductsProvider(props) {
   let infoProducts = {};
   let infoDesing = {};
   let infoStamps = {};
-  let infoCheck = { };
+  let infoCheck = {};
   let infoCoverPage = {};
 
   //arry products
@@ -35,9 +35,12 @@ export function ProductsProvider(props) {
   //Count of cart
   const [countProducts, setCountProducts] = useState([]);
 
-  let totalProducts = addBooks.reduce((previousValue, currentValue) => previousValue + currentValue.price * countProducts, 0);
+  let totalProducts = addBooks.reduce((previousValue, currentValue) => previousValue + currentValue.price * currentValue.count, 0);
 
-  console.log(infoCart)
+   
+
+  console.log(totalProducts)
+  console.log(addBooks)
   return (
     <ProductsContext.Provider
       value={{

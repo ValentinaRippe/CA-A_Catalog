@@ -15,6 +15,7 @@ export function Cart() {
     setAddBooks(addBooks.filter((item, i) => i !== cardId));
     console.log(cardId);
   };
+  console.log(addBooks)
   return (
     <div className="Cart">
       <Link className="link" to="/">
@@ -55,7 +56,7 @@ export function Cart() {
                 )}
               </ul>
             </div>
-            <Counter id={item.id} priceBooks={item.price} countBooks={item.count} />
+            <Counter id={index} priceBooks={item.price} countBooks={item.count}  addBooks={addBooks} />
           </div>
         ))}
       </div>
