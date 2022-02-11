@@ -3,15 +3,14 @@ import "../../Views/Styles/Cart.css";
 import useProducts from "../../Hooks/useProducts";
 
 export function Counter({ priceBooks, countBooks }) {
-  const { setCountProducts} = useProducts()
+  const { setCountProducts } = useProducts();
   const [count, setCount] = useState(countBooks);
   let [price, setPrices] = useState(priceBooks);
-  
 
   const sum = () => {
     setCount(count + 1);
     setPrices(() => price + priceBooks);
-    setCountProducts(count)
+    setCountProducts(count);
   };
   const less = () => {
     setCount(count - 1);

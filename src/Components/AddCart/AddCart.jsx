@@ -16,13 +16,14 @@ export function AddCart() {
     addBooks.personalize = check.desingPersonalize
     addBooks.stamp = stamps.name
     addBooks.price = info.price
-    addBooks.pricex = info.price
+    addBooks.type = info.type
     addBooks.size = info.size
     addBooks.id = info.id
     alert('Se agrego tu producto')
     setAddBooks((prevState) => [...prevState, addBooks])
     setDisable(true)
     setInfoCart(info.price)
+    console.log(addBooks)
   }
   const Ok = () =>{
     if(check.state && info.name && info.image && page.name){

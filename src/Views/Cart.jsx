@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import logo from "../Assets/svg/logocañanegro.svg";
+import closed from "../Assets/svg/Closed.svg";
+
 import useProducts from "../Hooks/useProducts";
 import { Counter } from "../Components/Counter_Products/Counter";
-import closed from "../Assets/svg/Closed.svg";
+import { Send } from "../Components/Send/Send";
 import "./Styles/Cart.css";
 export function Cart() {
   const { addBooks, setAddBooks, totalProducts } = useProducts();
@@ -56,7 +59,10 @@ export function Cart() {
           </div>
         ))}
       </div>
-      <div>{totalProducts}</div>
+      <div>Total: $ {totalProducts}</div>
+      <div>
+        <Send/>
+      </div>
     </div>
   );
 }

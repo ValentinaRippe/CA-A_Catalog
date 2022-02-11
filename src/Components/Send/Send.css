@@ -1,0 +1,26 @@
+.button_confirm {
+  cursor: pointer;
+
+  font-weight: lighter;
+  padding: 0.5rem;
+  font-size: 16px;
+  background: #e0b88b;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.25);
+}
+.arrowleft_return {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: transparent;
+  background-image: url("../../Assets/svg/arrowleft.svg");
+  background-size: cover;
+  margin: 1rem;
+}
+.arrowleft_return:hover {
+  transform: scale(1.1);
+}
+.icon_whatsapp {
+}

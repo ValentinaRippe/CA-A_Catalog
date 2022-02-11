@@ -45,7 +45,7 @@ export function PersonalizeBoxes() {
           </Link>
         </div>
         <AddCart />
-        <p>Total: ${info.price}</p>
+        <p>Total: $ {info.price}</p>
       </div>
     </div>
   );

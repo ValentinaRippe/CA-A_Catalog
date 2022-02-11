@@ -58,7 +58,8 @@ export function ProductsProvider(props) {
         totalProducts,
         infoCart,
         setInfoCart,
-        setCountProducts
+        setCountProducts,
+        countProducts
       }}
     >
       {props.children}
