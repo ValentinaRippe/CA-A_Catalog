@@ -1,27 +1,34 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from "react";
+import "../../Views/Styles/Cart.css";
+import useProducts from "../../Hooks/useProducts";
 
-export function Counter({price, id}) {
-     const [count, setCount] = useState(0)
-     const [prices, setPrices] = useState(price)
-     
-     const sum = () =>{
-        if(id === id){
-         setCount(count +1)
-            setPrices(price + price)
-         }
-     }
-     const subs = () =>{
-        setCount(count -1)
-        setPrices(price - price)
-    }
-    console.log(price)
+export function Counter({ priceBooks, countBooks }) {
+  const { setCountProducts} = useProducts()
+  const [count, setCount] = useState(countBooks);
+  let [price, setPrices] = useState(priceBooks);
+  
+
+  const sum = () => {
+    setCount(count + 1);
+    setPrices(() => price + priceBooks);
+    setCountProducts(count)
+  };
+  const less = () => {
+    setCount(count - 1);
+    setPrices(() => price - priceBooks);
+  };
   return (
-  <div>
+    <div className="counterPrice_container">
+      <p>$ {price}</p>
       <div className="counter_products">
-                <button onClick={subs} className="arrowleft"></button>
-                <p>{count}</p>
-                <button onClick={sum} className="arrowright"></button>
-              </div>
-  </div>
+        <button
+          disabled={count === 1}
+          onClick={less}
+          className="arrowleft"
+        ></button>
+        <p>{count}</p>
+        <button onClick={sum} className="arrowright"></button>
+      </div>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import addcart from "../../Assets/svg/addcart.svg";
 import { Link } from "react-router-dom";
 import useProducts from "../../Hooks/useProducts";
 
-export function ButtonPersonalizer({ route, image, name, price, size, type }) {
+export function ButtonPersonalizer({ id, route, image, name, price, size, type }) {
   const { info, setInfo } = useProducts();
   let personalize = () => {
     info.image = image
@@ -11,6 +11,7 @@ export function ButtonPersonalizer({ route, image, name, price, size, type }) {
     info.price = price
     info.size = size
     info.type = type
+    info.id = id
     setInfo(info);
   };
   return (

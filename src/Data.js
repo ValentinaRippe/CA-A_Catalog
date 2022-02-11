@@ -10,7 +10,9 @@ import libretaespecializadapentagramada from './Assets/img/libretas/libretaespec
 import planeadorsemanalgrande from './Assets/img/organizadores/planeadorgrande.jpg'
 import planeadorsemanalmediano from './Assets/img/organizadores/planeadorsemanalmediano.jpeg'
 //img Paqueteria 
-import cajasparalibretas from './Assets/img/Paqueteria/cajasparalibretasabierta.jpg'
+import cajasparalibretasmedianas from './Assets/img/Paqueteria/cajasparalibretasmedianas.jpg'
+import cajasparalibretasgrandes from './Assets/img/Paqueteria/cajasparalibretasgrandes.jpg'
+import cajasparalibretasmini from './Assets/img/Paqueteria/cajasparalibretasmini.jpg'
 import cajasalamedida from './Assets/img/Paqueteria/portada.jpg'
 import bolsasalamedida from './Assets/img/Paqueteria/bolsasalamedida.jpg'
 //img Extras
@@ -143,7 +145,7 @@ export const dataProducts = [
                 id:10,
                 route:'/personalizarcajas',
                 name:'Cajas para Libretas',
-                image:cajasparalibretas,
+                image:cajasparalibretasgrandes,
                 size:'Grandes',
                 cms:'18 x 26 x 3 cms.',
                 price: 11000
@@ -152,7 +154,7 @@ export const dataProducts = [
                 id:11,
                 route:'/personalizarcajas',
                 name:'Cajas para Libretas',
-                image:cajasparalibretas,
+                image:cajasparalibretasmedianas,
                 size:'Medianas',
                 cms:'15 x 22 x 3 cms.',
                 price: 7000
@@ -161,7 +163,7 @@ export const dataProducts = [
                 id:12,
                 route:'/personalizarcajas',
                 name:'Cajas para Libretas',
-                image:cajasparalibretas,
+                image:cajasparalibretasmedianas,
                 size:'Pequeñas',
                 cms:'11 x 15 x 3 cms.',
                 price: 5000
@@ -170,7 +172,7 @@ export const dataProducts = [
                 id:13,
                 route:'/personalizarcajas',
                 name:'Cajas para Libretas',
-                image:cajasparalibretas,
+                image:cajasparalibretasmini,
                 size:'Mini',
                 cms:'10 x 10 x 3 cms.',
                 price: 5000

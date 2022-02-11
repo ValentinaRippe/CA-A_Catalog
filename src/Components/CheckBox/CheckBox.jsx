@@ -3,7 +3,7 @@ import important from "../../Assets/svg/important.svg";
 import "../../Components/CheckBox/CheckBox.css";
 import useProducts from "../../Hooks/useProducts";
 
-export function CheckBox() {
+export function CheckBox({activeCheck}) {
   const { check, setCheck } = useProducts();
   
   const onChangeValue = (event) => {
@@ -24,6 +24,7 @@ export function CheckBox() {
           type="radio"
           name='check'
           value='Si'
+          disabled={activeCheck}
         />
         <p>NO</p>
         <input

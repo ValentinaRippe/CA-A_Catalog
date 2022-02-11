@@ -3,7 +3,7 @@ import { dataProducts } from "../../Data";
 import "./Caracteristics.css";
 import rhomb from "../../Assets/svg/rhomb.svg";
 
-export function Caracteristics() {
+export function CaracteristicsBooks() {
   const [books, setBooks] = useState([]);
   const [planner, setPlanners] = useState([]);
 

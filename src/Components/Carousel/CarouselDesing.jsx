@@ -5,7 +5,7 @@ import "./Styles/Carousel.css";
 import arrowLeft from "../../Assets/svg/left.svg";
 import arrowRight from "../../Assets/svg/right.svg";
 
-export function CarouselDesing() {
+export function CarouselDesing({setActiveCheck}) {
   const { desing, setDesing } = useProducts();
   const [position, setPosition] = useState(0);
   const [positionLeft, setPositionleft] = useState(carouselDesing.length - 1);
@@ -22,6 +22,7 @@ export function CarouselDesing() {
     setDesing(desing);
     setActive(activeStyle);
     console.log(desing);
+    setActiveCheck(true)
   };
 
   const left = () => {

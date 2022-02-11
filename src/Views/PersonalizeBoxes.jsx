@@ -1,8 +1,13 @@
 import React from "react";
 import useProducts from "../Hooks/useProducts";
 import { Link } from "react-router-dom";
-import arrowReturn from "../Assets/svg/arrowleft.svg";
 import { AddCart } from "../Components/AddCart/AddCart";
+import { CaracteristicsBoxes } from "../Components/Caracteristics/CaracteristicsBoxes";
+import { Measures } from "../Components/Measures/Measures";
+import rhomb from "../Assets/svg/rhomb.svg";
+import arrowReturn from "../Assets/svg/arrowleft.svg";
+
+
 
 import "./Styles/Personalize.css";
 
@@ -24,6 +29,14 @@ export function PersonalizeBoxes() {
         <div className="text_caracteristics">
           <p>Características Generales</p>
         </div>
+        <CaracteristicsBoxes/>
+      </div>
+      <div>
+      <div className="container_titlebooks">
+          <img src={rhomb} alt="" />
+          <p className="text_titlebooks">Tamaños Cajas a la Medida</p>
+        </div>
+        <Measures/>
       </div>
       <div className="AddProduct">
         <div>

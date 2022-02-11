@@ -11,11 +11,17 @@ export function CarouselStamps() {
   const [position, setPosition] = useState(0);
   const [positionLeft, setPositionleft] = useState(carouselStamps.length - 1);
   const [positionRight, setPositionRight] = useState(1);
+  const [active, setActive] = useState({});
 
+  const activeStyle = {
+    border: '2px solid black',
+    transform: "scale(1.1)"
+  };
   let infoStamps = () => {
       stamps.name = carouselStamps[position].name
     setStamps(stamps);
     stamps.state = true
+    setActive(activeStyle);
     console.log(stamps)
   };
   
@@ -67,6 +73,7 @@ export function CarouselStamps() {
       <img
         onClick={infoStamps}
         className="img_desing"
+        style={active}
         src={carouselStamps[position].image}
         alt=""
         width="150px"

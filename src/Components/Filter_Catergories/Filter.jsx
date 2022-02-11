@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { dataProducts } from "../../Data";
 import { type } from '../../Reducer/Actions/catalogAction'
 
