@@ -45,11 +45,11 @@ export function Cart() {
                 <li>
                   Nombre: {item.name} {item.size}
                 </li>
-                {item.size === "Grande" || "Mediana" ? (
+                {item.size === "Grande" || item.size === "Mediana" ? (
                   <li>Personalizar: {item.personalize}</li>
                 ) : null}
                 <li>Papel Portada: {item.pages}</li>
-                {item.size === "Grande" || "Mediana" ? (
+                {item.size === "Grande" || item.size === "Mediana" ? (
                   <li>Diseño: {item.desing}</li>
                 ) : (
                   <li>Sello: {item.stamp}</li>

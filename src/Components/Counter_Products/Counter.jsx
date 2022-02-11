@@ -18,6 +18,10 @@ export function Counter({ id, priceBooks, countBooks, addBooks }) {
   };
   const less = () => {
     setCount(count - 1);
+    const items =[...addBooks] 
+    const plus = items[id].count - 1
+    items[id].count = plus
+    setAddBooks(items)
     setPrices(() => price - priceBooks);
   };
   console.log(price)
