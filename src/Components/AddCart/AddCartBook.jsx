@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import addcart from "../../Assets/svg/addcart.svg";
 import "./AddCart.css";
 import useProducts from "../../Hooks/useProducts";
-export function AddCart() {
+export function AddCartBook() {
   const {setInfoCart, addBooks, setAddBooks, info, desing, stamps, check, page} = useProducts()
   const [disable, setDisable] = useState(true)
   const [disableOk, setDisableOk] = useState(false)

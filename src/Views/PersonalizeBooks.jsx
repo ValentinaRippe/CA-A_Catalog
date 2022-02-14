@@ -7,7 +7,7 @@ import { CarouselStamps } from "../Components/Carousel/CarouselStamps";
 import { CheckBox } from "../Components/CheckBox/CheckBox";
 import { CoverPage } from "../Components/CoverPage/CoverPage";
 import rhomb from "../Assets/svg/rhomb.svg";
-import { AddCart } from "../Components/AddCart/AddCart";
+import { AddCartBook } from "../Components/AddCart/AddCartBook";
 import arrowReturn from "../Assets/svg/arrowleft.svg";
 
 import "../Components/CoverPage/CoverPage.css";
@@ -58,7 +58,7 @@ export function PersonalizeBooks() {
               <img src={arrowReturn} alt="" width="35px" />
             </Link>
           </div>
-          <AddCart />
+          <AddCartBook />
           <p>Total: $ {info.price}</p>
         </div>
       </div>

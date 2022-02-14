@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import "../../Views/Styles/Cart.css";
 import useProducts from "../../Hooks/useProducts";
 
-export function Counter({ id, priceBooks, countBooks, addBooks }) {
-  const { setCountProducts, setAddBooks } = useProducts();
-  const [count, setCount] = useState(countBooks);
-  let [price, setPrices] = useState(priceBooks);
+export function CounterBags({ id, priceBags, countBags, addBags}) {
+  const { setCountProducts, setAddBags } = useProducts();
+  const [count, setCount] = useState(countBags);
+  let [price, setPrices] = useState(priceBags);
 
   const sum = () => {
     setCount(count + 1);
-    const items =[...addBooks] 
+    const items =[...addBags] 
     const plus = items[id].count + 1
     items[id].count = plus
-    setAddBooks(items)
-    setPrices(() => price + priceBooks);
+    setAddBags(items)
+    setPrices(() => price + priceBags);
     setCountProducts(count);
   };
   const less = () => {
     setCount(count - 1);
-    const items =[...addBooks] 
+    const items =[...addBags] 
     const plus = items[id].count - 1
     items[id].count = plus
-    setAddBooks(items)
-    setPrices(() => price - priceBooks);
+    setAddBags(items)
+    setPrices(() => price - priceBags);
   };
   console.log(price)
   return (
